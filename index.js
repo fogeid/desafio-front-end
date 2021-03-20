@@ -43,22 +43,22 @@ function validationCont() {
 
 // Validation checkbox marker and value sticker button
 function validationCheckbox() {
-    var all = 0;
+    var aux = 0;
 
     allCheckbox.map((item) => {
         if (item.checked == false) {
-            all++;
+            aux++;
         };
     });
 
-    if (all == 3 & inputCont.value == 0) {
+    if (aux == 3 & inputCont.value == 0) {
         allCheckbox.map((item) => {
             item.classList.add("checkbox__error");
             inputCont.classList.add("input__error");
         });
-    } else if (all !== 3 & inputCont.value == 0) {
+    } else if (aux !== 3 & inputCont.value == 0) {
         inputCont.classList.add("input__error");
-    } else if (all == 3 & inputCont.value !== 0) {
+    } else if (aux == 3 & inputCont.value !== 0) {
         allCheckbox.map((item) => {
             item.classList.add("checkbox__error");
         });
