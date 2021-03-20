@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+	<title>Teste Frontend VAGAS.com</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<main class="box">
+		<header class="header">
+			<p class="title">Formulário<br />para compra de<br /><span>Pacote de Stickers</span></p>
+		</header>
+		<span class="space"></span>
+		<form class="form">
+			<fieldset class="fieldset">
+				<label class="label">Quais stickers:</label>
+				<span class="space"></span>
+				<div class="custom__checkbox">
+					<input type="checkbox" id="react" name="react" />
+					<label for="react">React</label>
+				</div>
+				<div class="custom__checkbox">
+					<input type="checkbox" id="vue" name="vue" />
+					<label for="vue">Vue</label>
+				</div>
+				<div class="custom__checkbox">
+					<input type="checkbox" id="angular" name="angular" />
+					<label for="angular">Angular</label>
+				</div>
+			</fieldset>
+			<span class="space-md"></span>
+			<fieldset class="fieldset">
+				<label class="label">Quantos stickers de cada?</label>
+				<span class="space"></span>
+				<div class="counter">
+					<button class="btn__decrease" id="menos">
+						<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+							<path
+								d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z" />
+						</svg>
+					</button>
+
+					<input type="text" value="0" />
+
+					<button class="btn__increase">
+						<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+							<path
+								d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" />
+						</svg>
+					</button>
+				</div>
+			</fieldset>
+			<span class="space-md"></span>
+			<fieldset class="fieldset">
+				<div class="label">Observações:</div>
+				<span class="space"></span>
+				<textarea name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
+			</fieldset>
+			<span class="space-md"></span>
+			<footer class="footer">
+				<p>Formulário enviado com sucesso!</p>
+				<button class="btn__submit">Enviar</button>
+			</footer>
+		</form>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
